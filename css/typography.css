@@ -1,0 +1,95 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nav-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.button-text {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.image-caption {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main-title {
+  font-size: 37px;
+  font-weight: 700;
+}
+
+.subheader-text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.body-text {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.project-card-text {
+  overflow: visible;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  height: 75px;
+  text-align: justify;
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: 700;
+  overflow: visible;
+  text-overflow: unset;
+  display: block;
+  white-space: normal;
+  height: 60px;
+}
+
+.project-subtitle {
+  font-size: 0.85rem; 
+  color: #555454; 
+  margin-top: 1px; 
+  margin-bottom: 0px;
+  font-style: italic; 
+  text-align: left;
+}
+
+/* Small devices (portrait tablets and large phones, 800px and below) */
+@media only screen and (max-width: 800px) {
+  .project-title {
+    height: auto; /* Remove fixed height on mobile */
+    min-height: 60px; /* Keep minimum space but allow expansion */
+  }
+  
+  .project-card-text {
+    height: auto; /* Remove fixed height on mobile */
+    min-height: 75px; /* Keep minimum space but allow expansion */
+    -webkit-line-clamp: none; /* Remove line clamping on mobile */
+  }
+  
+  .main-title {
+    font-size: 28px; /* Slightly smaller on mobile */
+  }
+  
+  .subheader-text {
+    font-size: 18px; /* Slightly smaller on mobile */
+  }
+}
+
+/* Very small devices (phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+  .project-title {
+    font-size: 18px; /* Smaller font size for very small screens */
+  }
+  
+  .main-title {
+    font-size: 24px; /* Even smaller on very small screens */
+  }
+}
